@@ -12,7 +12,7 @@ The junction tree we consider is
     0--->1<--2<--3
          ^
          |
-	 5
+	5
 #+END_SRC
 where =1= is root. The initial values/potentials are given as
 #+BEGIN_SRC txt
