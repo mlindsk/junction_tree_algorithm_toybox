@@ -3,6 +3,27 @@ A very minimal toy-box for my own curiosity about the junction tree algorithm im
 
 The (simple) rules for updating is as folllows: In =collect_evidence= the scalar of a node is updated to be twice the scalar value of the child. In =distribute_evidence= the scalar of a node is updated to be half the scalar value of the parent.
 
+The junction tree we consider is
+
+#+BEGIN_SRC txt
+         4
+         |
+         v
+    0--->1<--2<--3
+         ^
+         |
+	 5
+#+END_SRC
+where =1= is root. The initial values/potentials are given as
+#+BEGIN_SRC txt
+val(0) = 5
+val(1) = 6
+val(2) = 4
+val(3) = 2
+val(4) = 1
+val(5) = 3
+#+END_SRC
+
 
 Run the code as usual with
 
