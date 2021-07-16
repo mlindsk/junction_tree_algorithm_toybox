@@ -1,0 +1,17 @@
+* Recursive Junction Tree Algorithm
+A very minimal toy-box for my own curiosity about the junction tree algorithm implemented using recursion as opposed https://github.com/mlindsk/jti. Since I'm only interested in the message passing mechanism in the recursion I do not intend to implement actual clique potentials. These are just scalars here to make things easy. 
+
+The (simple) rules for updating is as folllows: In =collect_evidence= the scalar of a node is updated to be twice the scalar value of the child. In =distribute_evidence= the scalar of a node is updated to be half the scalar value of the parent.
+
+
+Run the code as usual with
+
+#+BEGIN_SRC bash
+g++ junction_tree_algorithm.cpp
+#+END_SRC
+
+and see the result 
+
+#+BEGIN_SRC bash
+./a.out
+#+END_SRC
